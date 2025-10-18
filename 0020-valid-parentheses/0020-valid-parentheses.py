@@ -1,14 +1,12 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        open = ["(", "[", "{"]
-        open_close_map = {"(": ")", "[": "]", "{": "}"}
-        close = [")", "]", "}"]
+        oc_map = {"(": ")", "[": "]", "{": "}"}
         i=1
         while i < len(s):
-            if s[i] not in close:
+            if s[i] not in oc_map.values():
                 i += 1
                 continue
-            elif (s[i-1] not in open) or (open_close_map[s[i-1]] != s[i]):
+            elif (s[i-1] not in oc_map.keys()) or (oc_map[s[i-1]] != s[i]):
                 return False
             else:
                 s = s[:i-1] + s[i+1:]
