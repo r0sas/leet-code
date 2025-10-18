@@ -8,9 +8,7 @@ class Solution:
             if s[i] not in close:
                 i += 1
                 continue
-            if s[i-1] not in open:
-                return False
-            elif open_close_map[s[i-1]] != s[i]:
+            elif (s[i-1] not in open) or (open_close_map[s[i-1]] != s[i]):
                 return False
             else:
                 s = s[:i-1] + s[i+1:]
