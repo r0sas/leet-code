@@ -7,6 +7,7 @@ Repository for Leet Code Solutions
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/r0sas/leet-code/tree/master/0001-two-sum) |
+| [0014-longest-common-prefix](https://github.com/r0sas/leet-code/tree/master/0014-longest-common-prefix) |
 ## Hash Table
 |  |
 | ------- |
@@ -21,4 +22,9 @@ Repository for Leet Code Solutions
 |  |
 | ------- |
 | [0013-roman-to-integer](https://github.com/r0sas/leet-code/tree/master/0013-roman-to-integer) |
+| [0014-longest-common-prefix](https://github.com/r0sas/leet-code/tree/master/0014-longest-common-prefix) |
+## Trie
+|  |
+| ------- |
+| [0014-longest-common-prefix](https://github.com/r0sas/leet-code/tree/master/0014-longest-common-prefix) |
 <!---LeetCode Topics End-->
