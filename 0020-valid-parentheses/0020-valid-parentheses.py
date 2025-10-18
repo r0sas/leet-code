@@ -14,6 +14,7 @@ class Solution:
             else:
                 s = s[:i-1] + s[i+1:]
                 i=1
+        print(s)
         if len(s) == 0:
             return True
         else:
