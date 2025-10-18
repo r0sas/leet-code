@@ -4,9 +4,11 @@ class Solution:
         close = [")", "]", "}"]
         i=1
         while i < len(s):
-            if (s[i] not in close) or (s[i-1] not in open_close_map.keys()):
+            if s[i] not in close:
                 i += 1
                 continue
+            if s[i-1] not in open_close_map.keys():
+                return False
             elif open_close_map[s[i-1]] != s[i]:
                 return False
             else:
