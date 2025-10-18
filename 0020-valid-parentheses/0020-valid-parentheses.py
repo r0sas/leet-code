@@ -1,8 +1,6 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        open = ["(", "[", "{"]
         oc_map = {"(": ")", "[": "]", "{": "}"}
-        close = [")", "]", "}"]
         i=1
         while i < len(s):
             if s[i] not in oc_map.values():
