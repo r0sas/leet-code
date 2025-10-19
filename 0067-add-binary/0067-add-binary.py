@@ -9,11 +9,9 @@ class Solution:
             highest = b
             lowest = a
         for i in range(1, len(lowest)+1):
-            print(i)
             new = str( (int(highest[-i]) + int(lowest[-i]) + s) %2) + new
             s = int( (int(highest[-i]) + int(lowest[-i]) + s) /2)
         for i in range(len(lowest)+1, len(highest)+1):
-            print(i)
             new = str( (int(highest[-i]) + s) %2) + new
             s = int( (int(highest[-i]) + s) /2)
         if s == 1:
